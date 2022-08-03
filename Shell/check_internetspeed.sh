@@ -63,8 +63,8 @@ ip=$(echo $csv | cut -d ',' -f10)
 down=${down%.*}
 up=${up%.*}
 
-OUTPUT="Download: $down bit/s, Upload: $up bit/s, Ping $ping ms"
-PERFORMANCE="'download'=$down bit/s, 'up'=$up bit/s, 'ping'=$ping ms, 'ip'=$ip"
+OUTPUT="Download: $down bit/s, Upload: $up bit/s, Ping: $ping ms, Ip: $ip"
+PERFORMANCE="'download'=$down;; 'up'=$up;; 'ping'=$ping;;"
 
 EXIT_CODE=$EXIT_OK
 
