@@ -9,6 +9,6 @@ class ExitCode(Enum):
     UNKNOWN = 3
 
 
-def message(code: ExitCode, msg=""):
+def message(code: ExitCode, msg="", param=""):
     print(f"{code.name} - {msg}")
     sys.exit(code.value)
